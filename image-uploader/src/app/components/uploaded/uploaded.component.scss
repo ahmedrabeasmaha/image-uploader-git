@@ -1,0 +1,177 @@
+.uploaded-cart {
+  background: #FFFFFF;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+
+  img {
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  .material-icons-round.md-48 {
+    color: #219653;
+    width: 48px;
+    height: 48px;
+    font-size: 48px;
+  }
+
+  h3 {
+    font-size: 1.125rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+  }
+
+  div {
+    margin: 12px 0 -5px 0;
+    background: #F6F8FB;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    padding: 0 5px;
+    min-height: 34px;
+    input {
+      border: none;
+      outline: none;
+      font-family: "Poppins", sans-serif;
+      font-size: 0.5rem;
+      flex: 1 0 auto;
+      background: #F6F8FB;
+      color: #4F4F4F;
+    }
+
+    button {
+      color: #FFFFFF;
+      background: #2F80ED;
+      outline: none;
+      cursor: pointer;
+      border-radius: 8px;
+      font-family: "Poppins", sans-serif;
+      border: none;
+      font-size: 0.5rem;
+    }
+  }
+}
+
+.toast-c {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  border-radius: 12px;
+  background: #fff;
+  padding: 20px 35px 20px 25px;
+  box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transform: translateX(calc(100% + 30px));
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+
+  &.active {
+    transform: translateX(0%);
+  }
+
+  .toast-c-content {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.toast-c-content {
+  .check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    min-width: 35px;
+    background-color: #2770ff;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 50%;
+  }
+  .material-icons-round.md-48 {
+    color: #219653;
+    width: 48px;
+    height: 48px;
+    font-size: 48px;
+  }
+  .message {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+  }
+}
+
+.message .text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #666666;
+
+  &.text-1 {
+    font-weight: 600;
+    color: #333;
+  }
+}
+
+.toast-c {
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    padding: 5px;
+    cursor: pointer;
+    opacity: 0.7;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      background-color: #2770ff;
+    }
+  }
+}
+
+.progress.active:before {
+  animation: progress 5s linear forwards;
+}
+
+@keyframes progress {
+  100% {
+    right: 100%;
+  }
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  background-color: #2770ff;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: #2770ff;
+  }
+}
+
+.toast-c.active ~ button {
+  pointer-events: none;
+}
+
+
+
+
