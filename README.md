@@ -1,12 +1,12 @@
 <!-- Please update value in the {}  -->
 
-<h1 style="text-align:center">Image Uploader</h1>
+<h1 align="center">Image Uploader</h1>
 
-<div style="text-align:center">
+<div align="center">
    Solution for a challenge from  <a href="https://devchallenges.io" target="_blank">Devchallenges.io</a>.
 </div>
 
-<div style="text-align:center">
+<div align="center">
   <h3>
     <a href="https://image-uploader-dev.netlify.app/">
       Demo
