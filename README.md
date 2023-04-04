@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://image-uploader-dev.netlify.app/">
+    <a href="https://image-uploader-dev.onrender.com">
       Demo
     </a>
     <span> | </span>
